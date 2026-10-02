@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO ===== -->
+<title>Muhammad Nouman | PhD Researcher in Autonomous Systems, Politecnico di Bari</title>
+<meta name="description" content="Muhammad Nouman is a PhD researcher in Autonomous Systems at Politecnico di Bari, Italy, working on Bluetooth 6.0/BLE localization, machine-learning-based anomaly and attack detection, and UAV-based inspection.">
+<meta name="author" content="Muhammad Nouman">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://muhammad-nouman-s.github.io/">
+
+<!-- Link previews (LinkedIn, WhatsApp, email) -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Muhammad Nouman | PhD Researcher, Politecnico di Bari">
+<meta property="og:description" content="Bluetooth 6.0/BLE localization, ML-based anomaly and attack detection, and safe autonomous systems.">
+<meta property="og:url" content="https://muhammad-nouman-s.github.io/">
+<meta property="og:image" content="https://muhammad-nouman-s.github.io/photo.jpg">
+<meta property="profile:first_name" content="Muhammad">
+<meta property="profile:last_name" content="Nouman">
+<meta name="twitter:card" content="summary">
+
+<!-- Structured data: tells Google who you are -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muhammad Nouman",
+  "jobTitle": "PhD Researcher in Autonomous Systems",
+  "url": "https://muhammad-nouman-s.github.io/",
+  "image": "https://muhammad-nouman-s.github.io/photo.jpg",
+  "email": "mailto:m.nouman@phd.poliba.it",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Politecnico di Bari",
+    "department": "Department of Electrical and Information Engineering (DEI)",
+    "address": {"@type": "PostalAddress", "addressLocality": "Bari", "addressCountry": "IT"}
+  },
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "COMSATS University Islamabad"},
+    {"@type": "CollegeOrUniversity", "name": "Federal Urdu University of Arts, Science and Technology"}
+  ],
+  "knowsAbout": ["Bluetooth Low Energy", "Bluetooth 6.0", "Indoor localization", "Machine learning", "Anomaly detection", "Intrusion detection", "Internet of Things", "Wireless networks", "Autonomous systems"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=ebfBz34AAAAJ",
+    "https://orcid.org/0000-0003-4233-5506",
+    "https://www.researchgate.net/profile/Muhammad-Nouman-40",
+    "https://www.linkedin.com/in/muhammad-nouman-88731a235/",
+    "https://telematics.poliba.it/muhammad-nouman/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='5' fill='%230B63B0'/><circle cx='16' cy='16' r='10' fill='none' stroke='%230B63B0' stroke-width='2' opacity='.55'/><circle cx='16' cy='16' r='15' fill='none' stroke='%230B63B0' stroke-width='2' opacity='.25'/></svg>">
+
+<style>
+:root{
+  --paper:#F6F8F9;
+  --surface:#FFFFFF;
+  --ink:#142033;
+  --muted:#586174;
+  --accent:#0B63B0;
+  --accent-soft:#E4EEF8;
+  --rule:#D3DAE2;
+  --serif:"Source Serif 4", "Charter", "Georgia", serif;
+  --sans:"Public Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#10161F;
+    --surface:#16202C;
+    --ink:#E6EBF1;
+    --muted:#9AA6B6;
+    --accent:#6AAEEB;
+    --accent-soft:#1B2D42;
+    --rule:#2A3747;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1.5rem}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:1.0625rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+img{max-width:100%;display:block}
+
+.layout{
+  max-width:1120px;margin:0 auto;
+  display:grid;grid-template-columns:300px 1fr;
+}
+
+/* ---------- Sidebar ---------- */
+.side{
+  position:sticky;top:0;align-self:start;height:100vh;
+  padding:3.5rem 2.25rem 2rem;
+  display:flex;flex-direction:column;align-items:center;text-align:center;
+  /* dotted rule, echoing the CV */
+  background-image:radial-gradient(circle, var(--accent) 1.2px, transparent 1.4px);
+  background-size:2px 9px;background-repeat:repeat-y;background-position:right top;
+}
+.beacon{position:relative;width:184px;height:184px;margin-bottom:1.75rem}
+.beacon img{
+  position:absolute;inset:22px;width:140px;height:140px;border-radius:50%;
+  object-fit:cover;border:3px solid var(--surface);
+  box-shadow:0 0 0 1px var(--rule);
+}
+.beacon span{
+  position:absolute;inset:0;border-radius:50%;
+  border:1.5px solid var(--accent);opacity:.18;
+}
+.beacon span:nth-child(2){inset:11px;opacity:.32}
+@media (prefers-reduced-motion: no-preference){
+  .beacon span{animation:pulse 2.4s ease-out 1 both}
+  .beacon span:nth-child(2){animation-delay:.25s}
+  @keyframes pulse{
+    0%{transform:scale(.78);opacity:0}
+    60%{opacity:.45}
+    100%{transform:scale(1)}
+  }
+}
+.side h1{
+  font-size:1.65rem;line-height:1.2;margin:0 0 .4rem;font-weight:700;letter-spacing:-.01em;
+}
+.side .role{font-family:var(--sans);font-size:.9rem;color:var(--muted);margin:0 0 .15rem;line-height:1.45}
+.side .org{font-family:var(--sans);font-size:.9rem;margin:0 0 1.6rem;line-height:1.45}
+.side .org a{color:var(--ink);text-decoration:none}
+.side .org a:hover{color:var(--accent)}
+
+.links{list-style:none;margin:0 0 1.5rem;padding:0;width:100%;font-family:var(--sans);font-size:.9rem}
+.links li{border-top:1px solid var(--rule)}
+.links li:last-child{border-bottom:1px solid var(--rule)}
+.links a{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:.55rem .25rem;color:var(--ink);text-decoration:none;
+}
+.links a:hover{color:var(--accent)}
+.links small{color:var(--muted);font-size:.78rem}
+
+.mail{font-family:var(--sans);font-size:.9rem;margin:0 0 1rem}
+.social{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;width:100%;margin-bottom:1rem}
+.btn{
+  font-family:var(--sans);font-size:.82rem;font-weight:500;text-align:center;white-space:nowrap;
+  padding:.55rem .25rem;border:1.5px solid var(--accent);border-radius:6px;
+  color:var(--accent);text-decoration:none;background:var(--surface);
+  transition:background .15s, color .15s;
+}
+.btn:hover{background:var(--accent);color:#fff;text-decoration:none}
+@media (prefers-color-scheme: dark){ .btn:hover{color:#0B1420} }
+.cv{width:100%;text-align:center}
+.cv{
+  font-family:var(--sans);font-weight:600;font-size:.9rem;
+  display:inline-block;padding:.6rem 1.25rem;border-radius:6px;
+  background:var(--accent);color:#fff;text-decoration:none;
+}
+@media (prefers-color-scheme: dark){ .cv{color:#0B1420} }
+.cv:hover{filter:brightness(1.08)}
+
+/* ---------- Main ---------- */
+main{padding:3.25rem 3.5rem 4rem;max-width:780px}
+nav.top{
+  font-family:var(--sans);font-size:.88rem;
+  display:flex;gap:1.4rem;flex-wrap:wrap;margin-bottom:3rem;
+}
+nav.top a{color:var(--muted);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent}
+nav.top a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+
+.lede{font-size:1.4rem;line-height:1.5;margin:0 0 1.25rem;font-weight:400}
+section{margin-bottom:3.5rem}
+h2{
+  font-size:1.35rem;font-weight:700;margin:0 0 1.25rem;padding-bottom:.5rem;
+  border-bottom:1px solid var(--rule);letter-spacing:-.005em;
+}
+h3{font-size:1.06rem;margin:0 0 .25rem;font-weight:600}
+p{margin:0 0 1rem}
+
+.themes{display:grid;gap:1.75rem}
+.theme{padding-left:1.1rem;border-left:3px solid var(--accent)}
+.theme p{margin:0;color:var(--muted)}
+.theme p a{white-space:nowrap}
+
+.news{list-style:none;margin:0;padding:0}
+.news li{display:grid;grid-template-columns:5.5rem 1fr;gap:1rem;padding:.45rem 0}
+.news time{font-family:var(--sans);font-size:.85rem;color:var(--muted);padding-top:.15rem}
+
+.pubgroup{font-family:var(--sans);font-size:.95rem;font-weight:600;color:var(--muted);margin:2rem 0 .75rem}
+.pubgroup:first-of-type{margin-top:0}
+.pub{display:grid;grid-template-columns:3.5rem 1fr;gap:1rem;padding:.8rem 0;border-top:1px solid var(--rule)}
+.pub .yr{font-family:var(--sans);font-size:.85rem;color:var(--muted);padding-top:.2rem}
+.pub .title{font-weight:600;display:block;margin-bottom:.15rem}
+.pub .authors{display:block;font-size:.97rem}
+.pub .authors b{font-weight:600;color:var(--accent)}
+.pub .venue{display:block;font-size:.97rem;color:var(--muted);font-style:italic}
+.pub .doi{font-family:var(--sans);font-size:.82rem;display:inline-block;margin-top:.3rem}
+.status{
+  font-family:var(--sans);font-style:normal;font-size:.76rem;
+  background:var(--accent-soft);color:var(--ink);padding:.1rem .5rem;border-radius:4px;margin-left:.35rem;
+  white-space:nowrap;
+}
+
+.entry{display:grid;grid-template-columns:8.5rem 1fr;gap:1.25rem;padding:.9rem 0;border-top:1px solid var(--rule)}
+.entry:first-of-type{border-top:0;padding-top:0}
+.entry .when{font-family:var(--sans);font-size:.85rem;color:var(--muted);padding-top:.15rem}
+.entry .where{color:var(--muted);margin:0 0 .4rem;font-size:.97rem}
+.entry ul{margin:0;padding-left:1.1rem}
+.entry li{margin-bottom:.2rem}
+
+.certs{list-style:none;margin:0;padding:0}
+.certs li{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.65rem 0;border-top:1px solid var(--rule)}
+.certs li:first-child{border-top:0;padding-top:0}
+.certs .cname{font-weight:600}
+.certs .issuer{font-family:var(--sans);font-size:.88rem;color:var(--muted);padding-top:.15rem}
+.contact{display:grid;grid-template-columns:8.5rem 1fr;gap:.6rem 1.25rem}
+.contact dt{font-family:var(--sans);font-size:.88rem;color:var(--muted);padding-top:.1rem}
+.contact dd{margin:0}
+
+footer{font-family:var(--sans);font-size:.8rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:1.25rem}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px){
+  .layout{grid-template-columns:1fr}
+  .social,.cv{max-width:360px}
+  .side{
+    position:static;height:auto;padding:2.5rem 1.5rem 2rem;
+    background-image:radial-gradient(circle, var(--accent) 1.2px, transparent 1.4px);
+    background-size:9px 2px;background-repeat:repeat-x;background-position:left bottom;
+  }
+  .links{max-width:360px}
+  main{padding:2rem 1.5rem 3rem}
+  nav.top{gap:1rem;margin-bottom:2.25rem}
+}
+@media (max-width: 560px){
+  .lede{font-size:1.22rem}
+  .entry,.contact{grid-template-columns:1fr;gap:.2rem}
+  .news li{grid-template-columns:1fr;gap:0}
+  .pub{grid-template-columns:1fr;gap:.1rem}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="side">
+    <div class="beacon" aria-hidden="false">
+      <span></span><span></span>
+      <img src="data:image/jpeg;base64,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" alt="Portrait of Muhammad Nouman" width="140" height="140">
+    </div>
+    <h1>Muhammad Nouman</h1>
+    <p class="role">PhD Researcher in Autonomous Systems</p>
+    <p class="org"><a href="https://telematics.poliba.it/muhammad-nouman/">Telematics Lab, DEI<br>Politecnico di Bari, Italy</a></p>
+
+    <p class="mail"><a href="mailto:m.nouman@phd.poliba.it">m.nouman@phd.poliba.it</a></p>
+    <div class="social" aria-label="Research profiles">
+      <a class="btn" href="https://scholar.google.com/citations?user=ebfBz34AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn" href="https://orcid.org/0000-0003-4233-5506" target="_blank" rel="noopener">ORCID</a>
+      <a class="btn" href="https://www.researchgate.net/profile/Muhammad-Nouman-40" target="_blank" rel="noopener">ResearchGate</a>
+      <a class="btn" href="https://www.linkedin.com/in/muhammad-nouman-88731a235/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <!-- Upload your CV PDF next to this file with exactly this name -->
+    <a class="cv" href="Muhammad_Nouman_CV.pdf" download="Muhammad_Nouman_CV.pdf">Download CV (PDF)</a>
+  </aside>
+
+  <main>
+    <nav class="top" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+      <p class="lede">I work on reliable sensing, localization, and security for connected autonomous systems.</p>
+      <p>I am a PhD researcher in Autonomous Systems at the Telematics Lab, Department of Electrical and Information Engineering (DEI), Politecnico di Bari, Italy, and affiliated with the Consorzio Nazionale Interuniversitario per le Telecomunicazioni (CNIT). My work combines Bluetooth 6.0/BLE localization, machine-learning-based anomaly and attack detection, and UAV-based inspection.</p>
+      <p>Before Bari, I collaborated with research groups at the School of Electrical Engineering and Computer Science, University of North Dakota, USA, and worked as a Research Assistant at the ComSens Research Lab, COMSATS University Islamabad, where I completed my MS in Computer Science. I am interested in applying learning-based methods to the safety and robustness of autonomous and physical AI systems.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <div class="themes">
+        <div class="theme">
+          <h3>Bluetooth 6.0 and BLE localization</h3>
+          <p>Advertising, channel sounding, and localization in Bluetooth&nbsp;6.0; presence and motion-state estimation from irregular BLE advertisement logs; throughput optimization for BLE extended advertising.</p>
+        </div>
+        <div class="theme">
+          <h3>Learning-based anomaly and attack detection</h3>
+          <p>Machine learning for detecting attacks and malicious nodes in IoT networks and wireless sensor networks, including boosting-based detectors and blockchain-backed data storage.</p>
+        </div>
+        <div class="theme">
+          <h3>UAV-based inspection</h3>
+          <p>Assessing video quality for bridge inspections carried out with unmanned aerial vehicles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <h3 class="pubgroup">Journal articles</h3>
+      <article class="pub">
+        <span class="yr">2024</span>
+        <div>
+          <span class="title">A Blockchain-based Fish Supply Chain Framework for Maintaining Fish Quality and Authenticity</span>
+          <span class="authors">S. Ismail, <b>M. Nouman</b>, H. Reza, F. Vasefi, H. K. Zadeh</span>
+          <span class="venue">IEEE Transactions on Services Computing</span>
+          <a class="doi" href="https://doi.org/10.1109/TSC.2024.3422897">doi:10.1109/TSC.2024.3422897</a>
+        </div>
+      </article>
+      <article class="pub">
+        <span class="yr">2023</span>
+        <div>
+          <span class="title">Malicious Node Detection using Machine Learning and Distributed Data Storage using Blockchain in WSNs</span>
+          <span class="authors"><b>M. Nouman</b>, U. Qasim, H. Nasir, A. Khalid, A. Almasoud, M. Imran, N. Javaid</span>
+          <span class="venue">IEEE Access</span>
+          <a class="doi" href="https://doi.org/10.1109/ACCESS.2023.3236983">doi:10.1109/ACCESS.2023.3236983</a>
+        </div>
+      </article>
+      <article class="pub">
+        <span class="yr">2023</span>
+        <div>
+          <span class="title">Towards an Integrated Security Framework Using Blockchain and Machine Learning</span>
+          <span class="authors">S. Ismail, <b>M. Nouman</b>, D. W. Dawoud, H. Reza</span>
+          <span class="venue">Blockchain: Research and Applications</span>
+          <a class="doi" href="https://doi.org/10.1016/j.bcra.2023.100174">doi:10.1016/j.bcra.2023.100174</a>
+        </div>
+      </article>
+
+      <h3 class="pubgroup">Conference papers</h3>
+      <article class="pub">
+        <span class="yr">2025</span>
+        <div>
+          <span class="title">Machine Learning-Based Histogram Boosting Approach for Attack Detection in IoT Networks</span>
+          <span class="authors"><b>M. Nouman</b>, N. Cordeschi, A. Fascista</span>
+          <span class="venue">16th IFIP Wireless and Mobile Networking Conference (WMNC), Leuven, Belgium, pp. 53–57</span>
+          <a class="doi" href="https://doi.org/10.23919/WMNC67099.2025.11299281">doi:10.23919/WMNC67099.2025.11299281</a>
+        </div>
+      </article>
+      <article class="pub">
+        <span class="yr">2025</span>
+        <div>
+          <span class="title">Assessing Video Quality in Bridge Inspections with Unmanned Aerial Vehicles</span>
+          <span class="authors">O. Pohudina, N. Cordeschi, <b>M. Nouman</b>, A. Fascista</span>
+          <span class="venue">15th IEEE International Conference on Dependable Systems, Services and Technologies (DESSERT), Athens, Greece <span class="status">Accepted</span></span>
+        </div>
+      </article>
+
+      <h3 class="pubgroup">Manuscripts in preparation</h3>
+      <article class="pub">
+        <span class="yr"></span>
+        <div>
+          <span class="title">Bluetooth 6.0 for IoT: A Survey on Advancements from Decision-Based Advertising Filtering to Channel Sounding</span>
+          <span class="authors"><b>M. Nouman</b>, P. Boccadoro, N. Cordeschi, A. Fascista</span>
+          <span class="venue">Target: IEEE Internet of Things Journal <span class="status">In preparation</span></span>
+        </div>
+      </article>
+      <article class="pub">
+        <span class="yr"></span>
+        <div>
+          <span class="title">iBeacon Presence and Motion-State Estimation from Irregular BLE Advertisement Logs</span>
+          <span class="authors"><b>M. Nouman</b>, P. Boccadoro, N. Cordeschi, A. Fascista</span>
+          <span class="venue">Target: IoTBDS, position paper <span class="status">In preparation</span></span>
+        </div>
+      </article>
+      <article class="pub">
+        <span class="yr"></span>
+        <div>
+          <span class="title">Auxiliary Channel-Selection-Aware Throughput Optimization for Bluetooth Low Energy Extended Advertising</span>
+          <span class="authors"><b>M. Nouman</b>, N. Cordeschi, A. Fascista, P. Boccadoro</span>
+          <span class="venue">Target: IEEE Wireless Communications Letters <span class="status">In preparation</span></span>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="entry">
+        <span class="when">Nov 2024 – present</span>
+        <div>
+          <h3>Researcher</h3>
+          <p class="where">Telematics Lab, Politecnico di Bari, Italy</p>
+          <ul>
+            <li>Researching Bluetooth 6.0 advertising and localization across multiple low-power IoT standards, with three manuscripts in preparation.</li>
+            <li>Developed a machine-learning-based histogram boosting approach for attack detection in IoT networks.</li>
+            <li>Contributed to research on video quality assessment for UAV-based bridge inspections.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <span class="when">Jan 2023 – Aug 2024</span>
+        <div>
+          <h3>International Research Collaboration</h3>
+          <p class="where">School of Electrical Engineering and Computer Science, University of North Dakota, USA</p>
+          <ul>
+            <li>Worked with research groups on blockchain- and ML-based security frameworks.</li>
+            <li>Implemented experimental code, validated research findings, and contributed to two journal publications.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <span class="when">Jul 2021 – Oct 2022</span>
+        <div>
+          <h3>Research Assistant</h3>
+          <p class="where">ComSens Research Lab, COMSATS University Islamabad, Pakistan</p>
+          <ul>
+            <li>Conducted research on ML-based malicious node detection in wireless sensor networks.</li>
+            <li>Supervised student research projects, reviewed student work, and delivered lectures.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="entry">
+        <span class="when">2024 – 2027 (expected)</span>
+        <div>
+          <h3>PhD in Autonomous Systems</h3>
+          <p class="where">Politecnico di Bari, Italy</p>
+          <p>Thesis: <i>Methodologies and Protocols for Innovation and Interoperability between Internet of Things Standards in Home Automation.</i></p>
+        </div>
+      </div>
+      <div class="entry">
+        <span class="when">2020 – 2022</span>
+        <div>
+          <h3>MS in Computer Science</h3>
+          <p class="where">COMSATS University Islamabad, Pakistan &nbsp;|&nbsp; CGPA 3.54/4.0</p>
+          <p>Thesis: <a href="https://www.researchgate.net/publication/366371585_Efficient_Malicious_Node_Detection_and_Distributed_Data_Storage_using_Blockchain_and_IPFS_in_WSNs"><i>Efficient Malicious Node Detection and Distributed Data Storage using Blockchain and IPFS in WSNs.</i></a></p>
+        </div>
+      </div>
+      <div class="entry">
+        <span class="when">2015 – 2019</span>
+        <div>
+          <h3>BS in Computer Science</h3>
+          <p class="where">Federal Urdu University of Arts, Science and Technology, Islamabad, Pakistan &nbsp;|&nbsp; CGPA 3.28/4.0</p>
+          <p>Thesis: <i>Secure Communication in the Internet of Things (IoT) using Symmetric Cryptography Techniques.</i></p>
+        </div>
+      </div>
+
+      <h3 class="pubgroup">Summer schools and conferences</h3>
+      <ul class="news">
+        <li><time datetime="2026-09">Sep 2026</time><span>PhD Summer School on Autonomous Systems, Politecnico di Bari, Italy</span></li>
+        <li><time datetime="2025-09">Sep 2025</time><span>Automatica.it 2025, Perugia and Assisi, Italy</span></li>
+        <li><time datetime="2025-07">Jul 2025</time><span>Summer School: Shaping the Evolution of Machine Learning in the Fields of Information Engineering and Security, Brixen, Italy</span></li>
+        <li><time datetime="2024-11">Nov 2024</time><span>6th International Conference on Industry 4.0 and Smart Manufacturing (ISM 2024), Prague, Czech Republic</span></li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="certs">
+        <li><span class="cname"><a href="https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/" target="_blank" rel="noopener">Bluetooth Low Energy Fundamentals</a> <span class="status">In progress</span></span><span class="issuer">Nordic Semiconductor</span></li>
+        <li><span class="cname">Machine Learning</span><span class="issuer">Stanford University, Coursera</span></li>
+        <li><span class="cname">Blockchain Basics</span><span class="issuer">University at Buffalo, Coursera</span></li>
+        <li><span class="cname">Cisco Certified Network Associate (CCNA)</span><span class="issuer">ezxprt</span></li>
+        <li><span class="cname">Huawei Certified Network Associate (HCNA)</span><span class="issuer">Huawei</span></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <dl class="contact">
+        <dt>University email</dt><dd><a href="mailto:m.nouman@phd.poliba.it">m.nouman@phd.poliba.it</a></dd>
+        <dt>Personal email</dt><dd><a href="mailto:noumansatti777@gmail.com">noumansatti777@gmail.com</a></dd>
+        <dt>Address</dt><dd>Department of Electrical and Information Engineering (DEI)<br>Politecnico di Bari, Via Edoardo Orabona 4<br>70125 Bari, Italy</dd>
+        <dt>Languages</dt><dd>English, Urdu</dd>
+      </dl>
+    </section>
+
+    <footer>
+      <p>© 2026 Muhammad Nouman. Last updated October 2026.</p>
+    </footer>
+  </main>
+</div>
+</body>
+</html>
