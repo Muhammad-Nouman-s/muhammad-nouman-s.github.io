@@ -212,11 +212,10 @@ p{margin:0 0 1rem}
 .entry ul{margin:0;padding-left:1.1rem}
 .entry li{margin-bottom:.2rem}
 
-.certs{list-style:none;margin:0;padding:0}
-.certs li{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.65rem 0;border-top:1px solid var(--rule)}
-.certs li:first-child{border-top:0;padding-top:0}
-.certs .cname{font-weight:600}
-.certs .issuer{font-family:var(--sans);font-size:.88rem;color:var(--muted);padding-top:.15rem}
+.certs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.6rem}
+.certs li{display:flex;flex-direction:column;gap:.15rem;padding:.55rem .75rem;border:1px solid var(--rule);border-radius:6px}
+.certs .cname{font-weight:600;font-size:.95rem;line-height:1.3}
+.certs .issuer{font-family:var(--sans);font-size:.82rem;color:var(--muted)}
 .contact{display:grid;grid-template-columns:8.5rem 1fr;gap:.6rem 1.25rem}
 .contact dt{font-family:var(--sans);font-size:.88rem;color:var(--muted);padding-top:.1rem}
 .contact dd{margin:0}
