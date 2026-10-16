@@ -156,9 +156,10 @@ img{max-width:100%;display:block}
   transition:background .15s, color .15s;
 }
 .btn:hover{background:var(--accent);color:#fff;text-decoration:none}
-.social{grid-template-columns:1fr;gap:.4rem}
-.social .btn{display:flex;align-items:center;justify-content:flex-start;gap:.6rem;padding:.45rem .75rem;font-size:.82rem;text-align:left}
-.social .ico{width:1.1rem;height:1.1rem;flex:none}
+.social{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem}
+.social .btn{display:flex;align-items:center;justify-content:center;width:2.6rem;height:2.6rem;padding:0;border-radius:50%}
+.social .btn span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.social .ico{width:1.3rem;height:1.3rem;flex:none}
 .social .btn:hover .ico path{fill:currentColor}
 @media (prefers-color-scheme: dark){ .btn:hover{color:#0B1420} }
 .cv{width:100%;text-align:center}
